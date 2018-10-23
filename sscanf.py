@@ -18,7 +18,7 @@ if sys.version_info < (3, 0):
 else:
     unicode = str
 
-LIBC = CDLL(util.find_library('c'))
+LIBC = CDLL(util.find_library('sscanf.dll'))
 
 C_SCANF_TYPES = {
     'i'   : c_int,
